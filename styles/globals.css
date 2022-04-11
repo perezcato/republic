@@ -1,16 +1,66 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/ProximaNova-Regular.otf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/ProximaNova-Bold.otf");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/ProximaNova-ExtraBold.otf");
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/ProximaNova-Black.otf");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/ProximaNova-Thin.otf");
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .font-abril{
+        font-family: 'Abril Fatface', cursive;
+    }
+    .font-proxima{
+        font-family: 'Proxima Nova', sans-serif;
+    }
+
+    .section_height{
+        height: calc(100vh - 336px);
+    }
+
+    .section_height_2{
+        height: calc(100vh - 224px);
+    }
+
+    .section_shadow {
+        box-shadow: 0px 4px 30px rgba(48, 85, 188, 0.5)
+    }
 }

@@ -4,8 +4,8 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-black w-full py-7  px-6">
-      <div className="max-w-1440 mx-auto text-white w-full flex justify-between">
-        <div className="font-proxima flex space-x-5 text-[10px] font-semibold">
+      <div className="max-w-1440 mx-auto text-white w-full flex lg:justify-between justify-center">
+        <div className="font-proxima flex space-x-5 text-[10px] font-semibold hidden lg:flex">
           <div>© REPUBLIC RECORDS</div>
           <div>PRIVACY POLICY</div>
           <div>TERMS & CONDITIONS</div>

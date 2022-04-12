@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Navbar from "../components/navbar/navbar";
-import Image from 'next/image'
 import Footer from "../components/footer";
 
 const Home: NextPage = () => {

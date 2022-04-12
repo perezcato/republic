@@ -62,8 +62,8 @@ const index = ({ setStep }: Prop) => {
                 </a>
                 <>
 
-                    {datas.map((data) =>
-                        <div className='flex justify-start items-center mt-[12px]'>
+                    {datas.map((data, key) =>
+                        <div key={key} className='flex justify-start items-center mt-[12px]'>
                             {/* <div className='mr-[14px] w-[32px] h-[32px]  rounded-full flex justify-center items-center'> */}
                             <div className={`${(data.imageURL == WrongIcon) ? 'mr-[14px] w-[32px] h-[32px] bg-[#EEBCC2] rounded-full flex justify-center items-center': 'mr-[14px] w-[32px] h-[32px]  rounded-full bg-[#E8EDFD] flex justify-center items-center' }`}>
                                 <Image src={data.imageURL} />

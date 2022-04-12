@@ -9,7 +9,7 @@ import { motion, } from 'framer-motion'
 type Prop = {
     setModal:React.Dispatch<React.SetStateAction<boolean>>
   }
-const index = ({setModal}:Prop) => {
+const Index = ({setModal}:Prop) => {
     const [step, setStep] = useState<number>(1)
 
 
@@ -68,4 +68,4 @@ const list = {
     )
 }
 
-export default index
+export default Index

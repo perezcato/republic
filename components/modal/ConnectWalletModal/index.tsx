@@ -4,6 +4,7 @@ import SecondComponent from '../Step2/index'
 import immutablexSignIn from '../../../public/imgs/immutablex_signIn.png'
 import Image from 'next/image'
 import closeIcon from '../../../public/imgs/closeIcon.png'
+import { motion, } from 'framer-motion'
 
 type Prop = {
     setModal:React.Dispatch<React.SetStateAction<boolean>>
@@ -15,11 +16,15 @@ const index = ({setModal}:Prop) => {
 const closeModal = () =>{
     setModal(false)
 }
+const list = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
+  }
 
     return (
-        <div className={'absolute top-[288px] right-[526px] w-[386px]  bg-white z-10'}>
+        <div className={'absolute top-[120px] right-[31px] h-[440px] overflow-auto w-[386px]  bg-white z-10'}>
 
-            <div className='w-full h-full px-[42px]  rounded-[4px]'>'
+            <div className='w-full h-full px-[42px]  rounded-[4px] pt-[38.1px] overflow-auto'>
                 {
                     step == 1 &&
                     <div className='flex justify-between'>
@@ -39,7 +44,11 @@ const closeModal = () =>{
 
                 {
                     step == 2 &&
-                    <div>
+                    <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={list}
+                    >
                         <div className='flex justify-end mb-[28px]'>
                             <div onClick={closeModal} className='w-[12.73px] h-[12.73px] cursor-pointer'>
                                 <Image src={closeIcon} />
@@ -47,9 +56,9 @@ const closeModal = () =>{
                             </div>
                         </div>
                         <SecondComponent setStep={setStep} />
-                    </div>
+                    </motion.div>
                 }
-                <div className='flex justify-center  h-[43px] '>
+                <div className='flex justify-center  h-[43px] mb-[20px] '>
                     <Image className='w-[191px] h-[43px]' src={immutablexSignIn} />
 
                 </div>

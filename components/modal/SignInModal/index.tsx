@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,Fragment} from 'react'
 import immutablexSignIn from '../../../public/imgs/immutablex_signIn.png'
 import Image from 'next/image'
 import ConnectWalletModal from '../ConnectWalletModal/index'
@@ -15,8 +15,8 @@ const index = ({setSignInToggler ,setConnectWalletToggler}:Prop) => {
     setSignInToggler(false)
   }
   return (
-    <div>
-    <div className={'absolute top-[120px] right-[31px] w-[285px] h-[440px] bg-white pl-[42px] z-10'}>
+<div>
+  <div className={'absolute right-[31px] w-[285px] h-[440px] bg-white pl-[42px] z-10'}>
         {/* line height */}
         <h3 className='flex justify-start font-proxima text-[#010315] font-semibold mt-[37px] text-[18px]'>
             Sign In

@@ -5,19 +5,19 @@ import Footer from "../components/footer";
 
 const Home: NextPage = () => {
   return (
-    <div className="min-h-screen min-w-screen bg-[url('/imgs/home_background.png')] bg-center bg-cover flex flex-col">
+    <div className="min-h-screen min-w-screen bg-[url('/imgs/home_bg_mobile.png')] md:bg-[url('/imgs/home_background.png')] bg-center bg-cover flex flex-col bg-black">
       <Navbar />
-      <main className="flex-1 max-w-1440 mx-auto w-full flex flex-col justify-center px-20">
+      <main className="flex-1 max-w-1440 mx-auto w-full flex flex-col justify-center md:items-start px-8 lg:px-20">
 
-        <div>
-          <div className="space-y-2">
-            <p className="font-proxima text-xl text-blue tracking-[0.3em] font-light">NEW ALBUM</p>
-            <h1 className="text-5xl text-white font-abril">BLACK CANVAS</h1>
-            <p className="font-proxima text-3xl text-white font-normal font-light tracking-[0.3em]">AVAILABLE NOW</p>
+        <div className="md:scale-[0.8] scale-100">
+          <div className="lg:space-y-2 space-y-3">
+            <p className="font-proxima text-xl text-blue tracking-[0.3em] font-light text-center md:text-left">NEW ALBUM</p>
+            <h1 className="text-5xl text-white font-abril text-center md:text-left">BLACK CANVAS</h1>
+            <p className="font-proxima text-2xl lg:text-3xl text-white font-normal font-light tracking-[0.3em] text-center md:text-left">AVAILABLE NOW</p>
           </div>
-          <div className="mt-10 flex items-center space-x-6">
+          <div className="mt-10 flex flex-col md:flex-row items-center md:space-x-6 space-y-6 md:space-y-0">
             <button className="text-white text-xs py-4 px-6 rounded-full bg-blue">STREAM/DOWNLOAD</button>
-            <div className="flex space-x-4 items-center">
+            <div className="flex space-x-4 items-center scale-[0.8] lg:scale-100">
               <div>
                 <svg width="38" height="37" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M18.4047 11.1339C17.0177 11.1339 14.8707 9.59842 12.6097 9.65392C9.62667 9.69092 6.89067 11.3374 5.35167 13.9459C2.25467 19.1814 4.55367 26.9144 7.57467 31.1694C9.05667 33.2414 10.8047 35.5724 13.1227 35.4984C15.3457 35.4059 16.1817 34.0924 18.8797 34.0924C21.5587 34.0924 22.3187 35.4984 24.6747 35.4429C27.0687 35.4059 28.5887 33.3339 30.0517 31.2434C31.7427 28.8384 32.4457 26.5074 32.4837 26.3779C32.4267 26.3594 27.8287 24.6389 27.7717 19.4589C27.7337 15.1299 31.4007 13.0579 31.5717 12.9654C29.4817 9.98692 26.2707 9.65392 25.1497 9.57992C22.2237 9.35792 19.7727 11.1339 18.4047 11.1339ZM23.3447 6.76792C24.5797 5.32492 25.3967 3.30842 25.1687 1.31042C23.4017 1.38442 21.2737 2.45742 20.0007 3.90042C18.8607 5.17692 17.8727 7.23042 18.1387 9.19142C20.0957 9.33942 22.1097 8.21092 23.3447 6.76792Z" fill="white"/>
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="mt-16 w-fit space-y-1">
+          <div className="mt-16 w-fit space-y-1 scale-75 lg:scale-100">
             <div className="flex items-center space-x-6">
               <div>
                 <svg width="148" height="43" viewBox="0 0 148 43" fill="none" xmlns="http://www.w3.org/2000/svg">

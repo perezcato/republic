@@ -8,52 +8,58 @@ const Collections = () => {
     <div className="bg-[url('/imgs/collections_bg.png')] bg-center bg-cover min-h-screen flex flex-col ">
       <Navbar />
       <main className="flex-1 w-full ">
-        <div className=" px-20 max-w-1440 mx-auto w-full text-white grid grid-cols-2">
-          <div className="h-full flex flex-col justify-center items-start">
-            <div className="space-y-1">
-              <p className="font_proxima font-light text-blue tracking-[0.3em] text-xl">EXCLUSIVE</p>
-              <h1 className="font-abril text-4xl">MEMBERSHIP NFT</h1>
+        <div className="px-8 md:px-12 lg:px-20 max-w-1440 mx-auto w-full text-white grid grid-cols-1 gap-y-10 lg:gap-y-0 md:grid-cols-2">
+          <div className="h-full flex items-center justify-center order-last md:order-first">
+
+            <div className="flex flex-col justify-center lg:items-start">
+              <div className="space-y-1">
+                <p className="font_proxima font-light text-blue tracking-[0.3em] text-xl">EXCLUSIVE</p>
+                <h1 className="font-abril text-4xl">MEMBERSHIP NFT</h1>
+              </div>
+
+              <p className="md:w-[385px] text-[#A9ABC3] text-sm mt-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+              </p>
+              <h4 className="font-proxima font-semibold text-lg mt-6">Holder Exclusive Perks</h4>
+              <ul className="text-[#A9ABC3] text-sm list-disc mt-6 ml-4">
+                <li>LiveStream Tour Pass</li>
+                <li>Limited Exclusive Merch</li>
+                <li>Virtual Back Stage Pass</li>
+                <li>Exclusive Interviews & Live AMAs</li>
+              </ul>
+
+              <button className="mt-9 border font-proxima rounded-full border-blue py-4 w-[206px] uppercase text-xs font-bold">Mint Your NFT</button>
             </div>
 
-            <p className="w-[385px] text-[#A9ABC3] text-sm mt-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
-            </p>
-            <h4 className="font-proxima font-semibold text-lg mt-6">Holder Exclusive Perks</h4>
-            <ul className="text-[#A9ABC3] text-sm list-disc mt-6 ml-4">
-              <li>LiveStream Tour Pass</li>
-              <li>Limited Exclusive Merch</li>
-              <li>Virtual Back Stage Pass</li>
-              <li>Exclusive Interviews & Live AMAs</li>
-            </ul>
 
-            <button className="mt-9 border font-proxima rounded-full border-blue py-4 w-[206px] uppercase text-xs font-bold">Mint Your NFT</button>
           </div>
-          <div className="flex justify-center items-center py-14">
-            <div className="relative h-[636px] w-[398px] ">
+          <div className="flex justify-center items-center md:justify-end lg:justify-center py-14">
+            <div className="relative h-[430px] lg:h-[636px] w-full md:w-full lg:w-[398px] ">
               <Image
                 src="/imgs/musician.png"
                 alt="collections"
                 layout="fill"
+                className="object-contain"
               />
             </div>
           </div>
-
         </div>
-        <div className="section_height px-20 max-w-1440 mx-auto w-full text-white flex flex-col justify-center items-start grid grid-cols-2 gap-x-5 ">
+
+        <div className="px-8 md:px-12 lg:px-20 section_height max-w-1440 mx-auto w-full text-white flex flex-col justify-center items-start grid grid-cols-1 md:grid-cols-2 gap-x-5 ">
           <div className="h-full flex items-center justify-center">
             <div className="relative h-[600px] w-full">
               <Image layout="fill" src={'/imgs/black_canvas.png'} className="object-contain xl:object-cover"/>
             </div>
           </div>
-          <div className="h-full flex flex-col justify-center  items-center">
+          <div className="h-full flex flex-col justify-center items-center">
             <div>
-              <div className="space-y-1 -mt-28 ">
+              <div className="space-y-1 lg:-mt-28 ">
                 <p className="font_proxima font-light text-blue tracking-[0.3em] text-xl">EXCLUSIVE</p>
                 <h1 className="font-abril text-4xl">MEMBERSHIP NFT</h1>
               </div>
-              <p className="w-[385px] text-[#A9ABC3] text-sm mt-6">
+              <p className="lg:w-[385px] text-[#A9ABC3] text-sm mt-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.
@@ -69,26 +75,29 @@ const Collections = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-[url('/imgs/collections_bottom.png')] bg-cover bg-center mt-12">
-          <div className="max-w-1440 mx-auto w-full px-20">
-            <div className="bg-[#0D1432] grid grid-cols-2 section_shadow border-blue border rounded-[4px]">
-              <div className="flex items-center justify-center">
-                <div className="relative w-[280px] h-[73px]">
-                  <Image layout="fill" src={'/imgs/immutablex.png'} className="" />
-                </div>
 
+        <div className=" bg-[url('/imgs/collections_bottom.png')] bg-cover bg-center mt-28 xl:mt-12">
+          <div className=" px-8 md:px-12 lg:px-20 max-w-1440 mx-auto w-full ">
+            <div className="bg-[#0D1432] grid grid-cols-1 lg:grid-cols-2 section_shadow border-blue border rounded-[4px] py-10 lg:py-16">
+              <div className="flex items-center justify-center order-last lg:order-first py-12 lg:py-0">
+                <div className="relative w-full lg:w-[280px] h-[53px] lg:h-[73px] ">
+                  <Image layout="fill" src={'/imgs/immutablex.png'} className="object-contain" />
+                </div>
               </div>
-              <div className="py-12 pr-20">
-                <h3 className="text-blue font-proxima text-xl">This NFT is 100% Carbon Neutral!</h3>
-                <p className="text-[#A9ABC3]/[.9] mt-4">The issuance and transfer of this NFT takes place on the ImmutableX blockchain technology and is
+
+              <div className="px-8 xl:px-16">
+                <h3 className="text-blue font-proxima text-lg md:text-xl text-left md:text-center lg:text-left">This NFT is 100% Carbon Neutral!</h3>
+                <p className="text-[#A9ABC3]/[.9] mt-4 text-sm md:text-base md:text-center lg:text-left">The issuance and transfer of this NFT takes place on the ImmutableX blockchain technology and is
                   100% carbon-neutral. Please learn more about it here from ImmutableX directly or here from the
                   independent source our-trace.com, highlighting that ImmutableX is a climate positive business.</p>
               </div>
             </div>
+
+
             <div className="section_height_2 text-white flex items-center justify-center flex-col ">
 
               <h3 className="font-abril text-5xl">JOIN US</h3>
-              <p className="font-proxima text-lg mt-8 text-center">The Tikat community is on fire and something we <br/> are so proud of! Don’t miss a beat by joining us:</p>
+              <p className="font-proxima lg:text-lg mt-8 text-center">The Tikat community is on fire and something we <br/> are so proud of! Don’t miss a beat by joining us:</p>
               <div className="flex items-center space-x-7 mt-8">
                 <div>
                   <svg width="52" height="38" viewBox="0 0 52 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -113,7 +122,6 @@ const Collections = () => {
 
             </div>
           </div>
-
         </div>
 
       </main>

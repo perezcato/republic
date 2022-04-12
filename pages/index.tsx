@@ -8,7 +8,7 @@ const Home: NextPage = () => {
       <Navbar />
       <main className="flex-1 max-w-1440 mx-auto w-full flex flex-col justify-center md:items-start px-8 lg:px-20">
 
-        <div className="md:scale-[0.8] scale-100">
+        <div className="md:scale-[0.8] lg:scale-100">
           <div className="lg:space-y-2 space-y-3">
             <p className="font-proxima text-xl text-blue tracking-[0.3em] font-light text-center md:text-left">NEW ALBUM</p>
             <h1 className="text-5xl text-white font-abril text-center md:text-left">BLACK CANVAS</h1>
@@ -50,7 +50,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="mt-16 w-fit space-y-1 scale-75 lg:scale-100">
+          <div className="mt-16 w-fit scale-75 lg:scale-100 space-y-2">
             <div className="flex items-center space-x-6">
               <div>
                 <svg width="148" height="43" viewBox="0 0 148 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,8 +102,8 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className="text-white/[.3] proxima_nova uppercase text-[18px] text-center">
-              <span className="text-2xl font-bold">“</span> TiKat has OFFICIALLY arrived! <span className="text-2xl">“</span>
+            <div className="text-white/[.3] proxima_nova uppercase font-semibold text-[18px] text-center flex items-center justify-center space-x-2 overflow-hidden h-[30px]">
+              <span className="text-5xl font-bold font-proxima block mt-6 mr-2">“</span> TiKat has OFFICIALLY arrived! <span className="text-5xl font-bold font-proxima rotate-180 block -mt-6">“</span>
             </div>
           </div>
 

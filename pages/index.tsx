@@ -6,16 +6,16 @@ const Home: NextPage = () => {
   return (
     <div className="min-h-screen min-w-screen bg-[url('/imgs/home_bg_mobile.png')] md:bg-[url('/imgs/home_background.png')] bg-center bg-cover flex flex-col bg-black">
       <Navbar />
-      <main className="flex-1 max-w-1440 mx-auto w-full flex flex-col justify-center md:items-start px-8 lg:px-20">
+      <main className="flex-1 max-w-1440 mx-auto w-full flex flex-col justify-center md:items-start px-2 sm:px-8 lg:px-20">
 
         <div className="md:scale-[0.8] lg:scale-100">
-          <div className="lg:space-y-2 space-y-3">
-            <p className="font-proxima text-xl text-blue tracking-[0.3em] font-light text-center md:text-left">NEW ALBUM</p>
-            <h1 className="text-5xl text-white font-abril text-center md:text-left">BLACK CANVAS</h1>
-            <p className="font-proxima text-2xl lg:text-3xl text-white font-normal font-light tracking-[0.3em] text-center md:text-left">AVAILABLE NOW</p>
+          <div className="lg:space-y-2 space-y-1 sm:space-y-3">
+            <p className="font-proxima sm:text-xl text-blue tracking-[0.3em] font-light text-center md:text-left">NEW ALBUM</p>
+            <h1 className="text-3xl sm:text-5xl text-white font-abril text-center md:text-left">BLACK CANVAS</h1>
+            <p className="font-proxima text-lg sm:text-2xl lg:text-3xl text-white font-normal font-light tracking-[0.3em] text-center md:text-left">AVAILABLE NOW</p>
           </div>
           <div className="mt-10 flex flex-col md:flex-row items-center md:space-x-6 space-y-6 md:space-y-0">
-            <button className="text-white text-xs py-4 px-6 rounded-full bg-blue">STREAM/DOWNLOAD</button>
+            <button className="text-white text-[9px] sm:text-xs py-4 px-6 rounded-full bg-blue">STREAM/DOWNLOAD</button>
             <div className="flex space-x-4 items-center scale-[0.8] lg:scale-100">
               <div>
                 <svg width="38" height="37" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,8 +50,26 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="mt-16 w-fit scale-75 lg:scale-100 space-y-2">
-            <div className="flex items-center space-x-6">
+
+          <div className="relative mt-5 sm:mt-16 scale-[0.5] sm:scale-75 lg:scale-[0.90] space-y-2 flex flex-col justify-center items-center w-full">
+            <div className="absolute flex w-full justify-between top-8 w-[430px] ">
+              <div className=" top-10 ">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.828 12L15.778 16.95L14.364 18.364L8.00002 12L14.364 5.63601L15.778 7.05001L10.828 12Z" fill="white"/>
+                </svg>
+              </div>
+
+              <div className=" rotate-180  top-10 ">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.828 12L15.778 16.95L14.364 18.364L8.00002 12L14.364 5.63601L15.778 7.05001L10.828 12Z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+
+
+
+
+            <div className="flex justify-center items-center space-x-6 w-full">
               <div>
                 <svg width="148" height="43" viewBox="0 0 148 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.3" clipPath="url(#clip0_2_2399)">

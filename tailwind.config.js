@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: '320px',
+        ssm: '375px'
+      },
       maxWidth: {
         1440: "1440px",
       },
